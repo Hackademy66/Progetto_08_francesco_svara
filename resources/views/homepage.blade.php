@@ -2,10 +2,13 @@
 <div class="container-fluid px-0 home">
   <div class="row justify-content-center">
     <div class="container px-5">
-      <div class="row no-gutters">
-        <div class="col-12 col-lg-7 pt-4">
+      <div class="row no-gutters pt-5 mt-5">
+        <div class="col-12 col-lg-7 pt-5 mt-5">
           <div class="hero-first">
-            <h2 class="mt-4 mb-5 text-white">The Journey To <span class="bold">Find Your Dream Home</span> Begins Here!</h2>
+            @auth
+              <p class="m-0 mt-5 pt-5 me-3 text-white text-bold display-6">Welcome {{Auth::user()->name}}</p>
+            @endauth
+            <h2 class="mt-5 pt-5 mb-5 text-white">The Journey To <span class="bold">Find Your Dream Home</span> Begins Here!</h2>
             <div class="col-12 btn-layer mb-5 d-none d-md-block">
               <a href="{{route('sell.index')}}" class="btn bg-white mx-5 mr-md-3 mt-2 text-bold">For Sale</a>
               <a href="{{route('trade.index')}}" class="btn bg-white mx-5 mr-md-3 mt-2 text-bold">For Rent</a>

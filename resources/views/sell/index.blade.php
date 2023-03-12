@@ -1,12 +1,18 @@
 <x-layout>
+<div class="container-fluid py-5 sale-page">
+    <div class="row py-5">
+        <div class="col-12 text-center py-5 text-white">
+            <h1 class="display-1 text-bold">INDEX VENDITE</h1>
+        </div>
+    </div>
+</div>
 
-<h1>INDEX VENDITE</h1>
-<div class="container">
+<div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-12">
             @if (session()->has('sellUpdated'))
                 <div class="alert alert-success alert-dismissible fade show border-start border-end" role="alert">
-                    {{ session('sellUpdated') }}
+                    {{session('sellUpdated')}}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             @endif
@@ -14,17 +20,17 @@
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
+<div class="container-fluid py-5">
+    <div class="row py-5">
         @if(count($sells))
             @foreach($sells as $sell)
             <div class="col-12 col-md-6 col-lg-4 mb-5">
-                <a href="{{ route('sell.show', $sell) }}">
+                <a class="text-decoration-none" href="{{route('sell.show', $sell)}}">
                     <x-card
-                        name="{{ $sell->name }}"
-                        price="{{ $sell->price }}"
-                        cover="{{ $sell->cover }}"
-                        description="{{ $sell->description }}"
+                        name="{{$sell->name}}"
+                        price="{{$sell->price}}"
+                        cover="{{$sell->cover}}"
+                        description="{{$sell->description}}"
                     />   
                 </a> 
             </div>                 

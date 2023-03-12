@@ -1,8 +1,9 @@
 <x-layout>
 
+<div class="sale-create text-white">
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 text-center">
             <h1>Crea nuovo annuncio casa</h1>
         </div>
     </div>
@@ -38,14 +39,16 @@
                     <label for="cover" class="form-label">Inserisci l'immagine</label>
                     <input class="form-control" name="cover" type="file" id="cover">
                 </div>
-                <button type="submit" class="btn btn-primary">Invia</button>
+                <button type="submit" class="btn btn-light">Invia</button>
             </form>
+            <div class="row justify-content-center text-center pt-5">
             <form action="{{route('sell.index')}}">
-                <button type="submit" class="btn btn-primary">Torna Indietro</button>
+                <button type="submit" class="btn btn-outline-light">Torna Indietro</button>
             </form>
+            </div>
         </div>
     </div>
 </div>
-
+</div>
 
 </x-layout>

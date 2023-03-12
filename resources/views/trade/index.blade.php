@@ -1,6 +1,12 @@
 <x-layout>
+<div class="container-fluid py-5 sale-page">
+    <div class="row py-5">
+        <div class="col-12 text-center py-5 text-white">
+            <h1 class="display-1 text-bold">INDEX AFFITTI</h1>
+        </div>
+    </div>
+</div>
 
-<h1>INDEX ASTE</h1>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">

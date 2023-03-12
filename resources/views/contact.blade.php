@@ -1,8 +1,9 @@
 <x-layout>
 
-<div class="container-fluid">
+<div class="sale-create text-white">
+<div class="container-fluid ">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 text-center">
             <h1>CONTATTACI</h1>
         </div>
         <div class="col-12 col-md-8">
@@ -39,10 +40,11 @@
                 <label for="message">Messaggio</label>
                 <textarea type="text" name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Inserisci qui il testo"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Invia</button>
+              <button type="submit" class="btn btn-light mt-5">Invia</button>
             </form>
         </div>
     </div>
+</div>
 </div>
 
 </x-layout>
