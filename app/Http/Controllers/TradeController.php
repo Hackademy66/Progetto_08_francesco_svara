@@ -9,7 +9,7 @@ use App\Http\Requests\TradeRequest;
 class TradeController extends Controller
 {
     public function __construct() {
-        $this->middleware('auth')->except('index', 'show');
+        $this->middleware('auth')->only('create', 'edit', 'destroy');
     }
     /**
      * Display a listing of the resource.

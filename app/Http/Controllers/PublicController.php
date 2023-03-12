@@ -10,7 +10,7 @@ class PublicController extends Controller
 {
 
     public function __construct() {
-        $this->middleware('verified');
+        $this->middleware('verified')->except('homepage', 'about', 'contact');
     }
 
     public function homepage() {

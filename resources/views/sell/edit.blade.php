@@ -43,12 +43,18 @@
                     <label for="cover" class="form-label">Inserisci l'immagine</label>
                     <input class="form-control" name="cover" type="file" id="cover">
                 </div>
-                <button type="submit" class="btn btn-primary">Modifica</button>
-                <button href="{{route('sell.index')}}" type="submit" class="btn btn-primary">Torna Indietro</button>
             </form>
+            <div class="text-center mt-3">
+                <form method="" action="{{route('sell.index')}}">
+                    <button type="submit" class="btn btn-primary my-2 mr-2">Torna Indietro</button>
+                </form>
+                <form method="POST" action="{{route('sell.update', compact('sell'))}}" enctype="multipart/form-data">
+                    <button type="submit" class="btn btn-primary my-2 ml-2">Modifica</button>
+                </form>
+            </div>
+            
         </div>
     </div>
 </div>
-
 
 </x-layout>
