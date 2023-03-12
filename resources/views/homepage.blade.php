@@ -18,7 +18,14 @@
       </div>
     </div>
   </div>
+  <div class="col-12 text-center pt-5">
+      <a href="#explore-section pt-5">
+          <i class="bi bi-chevron-down display-5 text-white animate__animated animate__bounceInDown animate__infinite"></i>
+      </a>
+  </div>
 </div>
+
+
 
 <div class="container py-5">
   <div class="row mt-4 mb-md-5 py-5">

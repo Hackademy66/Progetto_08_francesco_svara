@@ -26,6 +26,10 @@ p a h3 div {
     font-weight: bolder;
 }
 
+.text-italic {
+    font-style: italic;
+}
+
 .bg-white {
     background-color: white;
 }
@@ -43,7 +47,7 @@ p a h3 div {
 
 .img-card {
     max-width: 100%; 
-    height: 18rem;
+    height: 20rem;
 }
 
 .shadow-card {

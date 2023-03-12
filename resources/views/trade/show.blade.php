@@ -11,6 +11,12 @@
                 <p class="card-text">{{$trade->price}}</p>
                 <p class="card-text">{{$trade->description}}</p>
                 <a href="{{(route('trade.index'))}}" class="btn btn-primary">torna indietro</a>
+                <a href="{{ route('trade.edit', $trade) }}" class="btn btn-outline-dark">Modifica</a>
+                <form action="{{ route('trade.destroy', $trade) }}" method="POST" class="d-inline-block">
+                    @csrf
+                    @method('delete')
+                    <button type="submit" class="btn btn-outline-danger">Elimina</button>
+                </form>
             </div>
         </div>
     </div>

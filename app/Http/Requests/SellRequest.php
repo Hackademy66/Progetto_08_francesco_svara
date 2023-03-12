@@ -25,7 +25,7 @@ class SellRequest extends FormRequest
             'name' => 'required|min:1|max:30',
             'price' => 'required',
             'cover' => 'required|image',
-            'description' => 'required|min:5|max:120',
+            'description' => 'required|min:5|max:2000',
         ];
     }
 
@@ -40,7 +40,7 @@ class SellRequest extends FormRequest
             'cover.image' => "Il formato dev'essere una foto",
             'description.required' => "E' necessario inserire la descrizione",
             'description.min' => "Il descrizione dev'essere lungo almeno 3 caratteri",
-            'description.max' => "Il descrizione non deve superare i 120 caratteri",
+            'description.max' => "Il descrizione non deve superare i 2000 caratteri",
         ];
     }
 }

@@ -32,7 +32,7 @@
         </li>
         @endauth
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('contact')}}">Contact</a>
+          <a class="nav-link active" aria-current="page" href="{{route('contact')}}">Contact Us</a>
         </li>
       </ul>
         <div class="collapse navbar-collapse justify-content-end" id="navRight">
@@ -42,7 +42,7 @@
             <form id="form-logout" method="POST" action="{{route('logout')}}" class="d-none">@Csrf</form>
             <button id="btn-login" class="btn btn-sm btn-outline-light me-3 log-btn" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</button>
             @else
-            <a id="btn-sign-up" class="btn btn-sm btn-outline-light me-3 log-btn" href="{{route('register')}}">Registrati</a>
+            <a id="btn-sign-up" class="btn btn-sm btn-outline-light me-3 log-btn" href="{{route('register')}}">Register</a>
             <a id="btn-login" class="btn btn-sm btn-outline-light log-btn" href="{{route('login')}}"><i class="bi bi-person-fill"></i> Login</a>
             @endAuth
           </div>

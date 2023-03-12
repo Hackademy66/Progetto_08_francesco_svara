@@ -9,6 +9,7 @@ window.addEventListener('scroll', function() {
     navbar.classList.remove('bg-transparent');
     navbar.classList.add('navbar-light');
     navbar.classList.remove('navbar-dark');
+    navbar.style.transition = 'all 1s'; 
     navLinks.forEach(function(link) {
       link.classList.add('text-black');
       link.classList.remove('text-white');
