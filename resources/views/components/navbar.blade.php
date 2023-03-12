@@ -16,7 +16,7 @@
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('trade.index')}}">Rent List</a>
+          <a class="nav-link active" aria-current="page" href="{{route('trade.index')}}">Rent</a>
         </li>
         @auth
         <li class="nav-item">
@@ -24,7 +24,7 @@
         </li>
         @endauth
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{route('sell.index')}}">Sale List</a>
+          <a class="nav-link active" aria-current="page" href="{{route('sell.index')}}">Sale</a>
         </li>
         @auth
         <li class="nav-item">

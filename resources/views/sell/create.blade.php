@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container pb-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8">
             <form class="p-lg-5 shadow" method="POST" action="{{route('sell.store')}}" enctype="multipart/form-data">

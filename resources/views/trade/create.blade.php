@@ -6,6 +6,13 @@
         <div class="col-12 col-md-8 text-center">
             <h1>New Rent Annunce</h1>
         </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-8 col-md-4">
+                <form action="{{route('trade.index')}}">
+                    <button type="submit" class="btn btn-outline-light">Back</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -22,13 +29,6 @@
                     </ul>
                     </div>
                 @endif
-                <div class="row justify-content-center text-center">
-                    <div class="col-8 col-md-4">
-                        <form action="{{route('trade.index')}}">
-                            <button type="submit" class="btn btn-outline-light">Back</button>
-                        </form>
-                    </div>
-                </div>
                 @csrf
                 <div class="form-group mb-3">
                     <label for="name">Title</label>

@@ -12,25 +12,16 @@ class TradeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|min:1|max:30',
+            'name' => 'required|min:1|max:50',
             'price' => 'required',
             'cover' => 'required|image',
-            'description' => 'required|min:5|max:120',
+            'description' => 'required|min:5|max:2000',
         ];
     }
 
     public function messages(): array 
     {
         return [
-            'name.required' => 'Il nome è obbligatorio',
-            'name.min' => 'Il nome deve avere almeno 1 carattere',
-            'name.max' => 'Il nome può avere al massimo 30 caratteri',
-            'price.required' => 'Il prezzo è obbligatorio',
-            'cover.required' => "L'immagine è obbligatoria",
-            'cover.image' => "Il formato dev'essere una foto",
-            'description.required' => "E' necessario inserire la descrizione",
-            'description.min' => "Il descrizione dev'essere lungo almeno 3 caratteri",
-            'description.max' => "Il descrizione non deve superare i 120 caratteri",
         ];
     }
 }

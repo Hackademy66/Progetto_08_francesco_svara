@@ -13,8 +13,11 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container-fluid mx-0 pt-5">
+    <div class="row justify-content-center pt-5">
+        <div class="col-12 ms-5 ps-5 text-bold">
+            <h3>Properties for sale in Dubai</h3>
+        </div>
         <div class="col-md-12">
             @if (session()->has('tradeUpdated'))
               <div class="alert alert-success alert-dismissible fade show border-start border-end" role="alert">
@@ -36,7 +39,7 @@
                         name="{{$trade->name}}"
                         price="{{$trade->price}}"
                         cover="{{$trade->cover}}"
-                        description="{{$trade->description}}"
+                        description="{{ Str::limit($trade->description, 100) }}"
                     />   
                 </a> 
             </div>                 
